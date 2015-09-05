@@ -18,11 +18,40 @@ git push -u origin master
 
 
 
+기존 프로젝트를 Git으로 관리하고 싶을 때, 프로젝트의 디렉토리로 이동해서 아래과 같은 명령을 실행한다.
+git init
+
+Git 저장소 만들기
+
 git add <파일 이름>
 git add *
 git commit -m "이번 확정본에 대한 설명"
+
+파일의 상태 확인하기
+git status
+
+파일 무시하기 -  .gitignore 파일을 만들고 그 안에 무시할 파일 패턴을 적는다
+cat .gitignore
+*.[oa]
+*~
+
+변경사항 커밋하기
+git commit
+git commit -m "first commit"
+
+
+파일을 삭제하기
+git rm grit.gemspec
+
 git push -u x700 origin master
 git remote add origin https://github.com/x700/x700.git
+
+
+기존 저장소를 Clone하기
+
+git clone git://github.com/schacon/grit.git
+git clone git://github.com/schacon/grit.git mygrit
+
 
 
 
